@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+      rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet">
+    <title>Savanna Orchard</title>
+  </head>
+  <body class="flex flex-col min-h-screen">
+
+    <!-- Desktop Menu -->
+    <header class="font-display pt-3 md:block">
+      <div
+        class="max-w-7xl mx-auto hidden overflow-visible justify-between items-center md:flex">
+        <div class="text-xl">
+          <a href>Savanna Orchard</a>
+        </div>
+
+        <div class="flex gap-8 text-xl">
+          <nav class="flex items-center gap-8">
+            <a href>Our Story</a>
+            <a href>Contact</a>
+          </nav>
+          <div class="gap-4 flex">
+            <div class="relative">
+              <i class="ri-shopping-bag-3-line"></i>
+              <span
+                class="absolute -top-2 -right-2 bg-black text-white text-xs w-4 h-4 rounded-full flex items-center justify-center">2</span>
+            </div>
+            <i class="ri-user-line"></i>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div
+        class="max-w-7xl mx-auto justify-between items-center font-display text-xl flex md:hidden ">
+
+        <button id="menu-btn">
+          <i class="ri-menu-line"></i>
+        </button>
+        <button id="close-btn" class="hidden">
+          <i class="ri-close-line"></i>
+        </button>
+
+        <div class>
+          <a href>Savanna Orchard</a>
+        </div>
+
+        <div class="flex gap-8 ">
+          <div class="gap-x-4 flex ">
+            <div class="relative">
+              <i class="ri-shopping-bag-3-line"></i>
+              <span
+                class="absolute -top-2 -right-2 bg-black text-white text-xs w-4 h-4 rounded-full flex items-center justify-center">2</span>
+            </div>
+            <i class="ri-user-line"></i>
+          </div>
+        </div>
+      </div>
+      <!-- Mobile Menu Items -->
+      <div id="mobile-menu"
+        class="max-h-0 overflow-hidden transition-all bg-stone-100 md:hidden">
+        <nav class="grid divide-y divide-stone-200">
+          <a class="py-3" href>Our Story</a>
+          <a class="py-3 " href>Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="flex-1">
+
+    </main>
+    <footer class>
+      <nav aria-label="Footer"
+        class="max-w-7xl mx-auto md:text-lg font-display flex items-start  justify-between py-8">
+        <div class>
+          <a href>Savanna Orchard</a>
+        </div>
+        <div class="flex gap-4">
+          <div class="grid gap-4">
+            <a href>Shipping & Returns</a>
+            <a href>FAQ</a>
+          </div>
+          <div class="grid gap-4">
+            <a href>Privacy Policy</a>
+            <a href>Terms & Conditions</a>
+          </div>
+        </div>
+      </nav>
+
+    </footer>
+    <script src="/src/main.js"></script>
+  </body>
+
+</html>
