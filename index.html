@@ -58,7 +58,7 @@
 
         <div class="flex gap-8 ">
           <div class="gap-x-4 flex ">
-            <div class="relative">
+            <div class="relative" id="cart-icon-mobile">
               <i class="ri-shopping-bag-3-line"></i>
               <span
                 class="absolute -top-2 -right-2 bg-black text-white text-xs w-4 h-4 rounded-full flex items-center justify-center">2</span>
@@ -74,6 +74,27 @@
           <a class="py-3" href>Our Story</a>
           <a class="py-3 " href>Contact</a>
         </nav>
+      </div>
+
+      <!-- Cart Menu -->
+      <div
+        class="max-h-0 transition-all overflow-hidden bg-stone-100 md:hidden"
+        id="cart-menu-mobile">
+        <div class="flex justify-between">
+          <img src="/src/assets/cart_product.png" alt>
+          <div class="grid grid-cols-2 gap-2 gap-x-6">
+            <p>Cardholder</p>
+            <!-- <p class="text-red-600">Remove</p> -->
+              <i class="ri-delete-bin-line active:text-red-600"></i>
+            <div class="flex gap-3">
+              <i class="ri-subtract-line"></i>
+              <p class="font-body">1</p>
+              <i class="ri-add-line"></i>
+            </div>
+            <p>$15.00</p>
+          </div>
+        </div>
+
       </div>
     </header>
 
